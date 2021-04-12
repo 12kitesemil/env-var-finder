@@ -1,0 +1,7 @@
+      let pattern = /.*(process.env).*/g
+const SAMPLE_VAR_A = process.env.SAMPLE_VAR_A
+const SAMPLE_VAR_B = process.env.SAMPLE_VAR_B
+const SAMPLE_VAR_C = process.env.SAMPLE_VAR_C
+const SAMPLE_VAR_A2 = process.env.SAMPLE_VAR_A2
+let SAMPLE_VAR_B2 = process.env.SAMPLE_VAR_B2
+var SAMPLE_VAR_A3 = process.env.SAMPLE_VAR_A3 || 'fahsgfuw7236jlg2547ljhq3g46v2c7hl48k245ym2g45g2q4g'

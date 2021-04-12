@@ -1,0 +1,12 @@
+{
+  "name": "find-env",
+  "version": "1.0.0",
+  "description": "Finds env vars in given directory",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "buildenv": "node index.js"
+  },
+  "author": "emil@12kites.com",
+  "license": "ISC"
+}
