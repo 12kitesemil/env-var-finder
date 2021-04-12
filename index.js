@@ -62,8 +62,11 @@ const findEnvLines = (paths, details = false) => {
       let data = lines.flat()
 
       let stripValue = data.map( line => line.split('=')[0])
-      let stripDeclarationWord = stripValue.map( line => line.split(' ')[1])//needs improving, what if there are more spaces?
-
+      let stripDeclarationWord = stripValue.map(line => {
+        let pattern = /^\s*(const|let|var)\s+/g
+        let res = line.replace(pattern, '')
+        return res
+      })
       res = stripDeclarationWord.join('\n')
 
       return res
@@ -100,6 +103,6 @@ const options = {
   txtFile: process.argv[4] || false
 }
 
-console.log(process.argv[2])
+
 
 init(options)
